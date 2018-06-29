@@ -1,0 +1,10 @@
+<div class="navbar-collapse">
+  <ul class="nav navbar-nav navbar-right">
+    <li [ngClass]="{'active': currentRoute === 'attendance'}">
+      <a (click)="goToRoute('attendance')">Attendance</a>
+    </li>
+    <li [ngClass]="{'active': currentRoute === 'transportation'}">
+      <a (click)="goToRoute('transportation')">Transportation</a>
+    </li>
+  </ul>
+</div>
